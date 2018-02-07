@@ -1,0 +1,393 @@
+<style type="text/css">
+	/*hr {
+		padding: 2%;
+	}*/
+	.lightpadding {
+		padding-bottom: 2%;
+	}
+	.col-lg-3.imagewall {
+		padding-right: 1;
+		padding-left: 1;
+		padding-bottom: 1;
+	}
+
+	.col-lg-12.imagewall {
+		padding-right: 1;
+		padding-left: 1;
+	}
+</style>
+
+
+
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="http://cdn3.bigcommerce.com/r-f6aaf3462fdfeac2f4adca6b61526eb3ec93a5ac/img/bc_favicon.ico" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link data-stencil-stylesheet href="http://cdn3.bigcommerce.com/s-zk6zghknnf/stencil/e68f23a0-9658-0135-7664-525400dfdca6/css/theme-2d380180-966a-0135-5494-525400970412.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Oswald:300|Karla:400|Montserrat:400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="http://cdn3.bigcommerce.com/s-zk6zghknnf/stencil/e68f23a0-9658-0135-7664-525400dfdca6/modernizr-custom.js"></script>
+
+
+    <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+        <span class="mobileMenu-toggleIcon">Toggle menu</span>
+    </a>
+    <nav class="navUser">
+    
+    <ul class="navUser-section navUser-section--alt">
+        <li class="navUser-item">
+            <a class="navUser-action navUser-item--compare" href="/compare" data-compare-nav>Compare <span class="countPill countPill--positive countPill--alt"></span></a>
+        </li>
+        <li class="navUser-item">
+            <a class="navUser-action navUser-action--quickSearch" href="#" data-search="quickSearch" aria-controls="quickSearch" aria-expanded="false">Search</a>
+        </li>
+            <li class="navUser-item">
+                <a class="navUser-action" href="/giftcertificates.php">Gift Certificates</a>
+            </li>
+        <li class="navUser-item navUser-item--account">
+                <a class="navUser-action" href="/account.php">Account</a>
+                <a class="navUser-action" href="/login.php?action=logout">Sign out</a>
+        </li>
+        <li class="navUser-item navUser-item--cart">
+            <a
+                class="navUser-action"
+                data-cart-preview
+                data-dropdown="cart-preview-dropdown"
+                data-options="align:right"
+                href="/cart.php">
+                <span class="navUser-item-cartLabel">Cart</span> <span class="countPill cart-quantity">0</span>
+            </a>
+
+            <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content aria-hidden="true"></div>
+        </li>
+    </ul>
+    <div class="dropdown dropdown--quickSearch" id="quickSearch" aria-hidden="true" tabindex="-1" data-prevent-quick-search-close>
+        <div class="container">
+    <!-- snippet location forms_search -->
+    <form class="form" action="/search.php">
+        <fieldset class="form-fieldset">
+            <div class="form-field">
+                <label class="is-srOnly" for="search_query">Search</label>
+                <input class="form-input" data-search-quick name="search_query" id="search_query" data-error-message="Search field cannot be empty." placeholder="Search the store" autocomplete="off">
+            </div>
+        </fieldset>
+    </form>
+    <section class="quickSearchResults" data-bind="html: results"></section>
+</div>
+    </div>
+</nav>
+
+        <div class="header-logo header-logo--center">
+            <a href="%%GLOBAL_ShopPath%%/">
+        <span class="header-logo-text">AgStandard - The Freshest Brand</span>
+</a>
+        </div>
+    
+    <div class="navPages-container" id="menu" data-menu>
+        <nav class="navPages">
+    <div class="navPages-quickSearch">
+        <div class="container">
+    <!-- snippet location forms_search -->
+    <form class="form" action="/search.php">
+        <fieldset class="form-fieldset">
+            <div class="form-field">
+                <label class="is-srOnly" for="search_query">Search</label>
+                <input class="form-input" data-search-quick name="search_query" id="search_query" data-error-message="Search field cannot be empty." placeholder="Search the store" autocomplete="off">
+            </div>
+        </fieldset>
+    </form>
+    <section class="quickSearchResults" data-bind="html: results"></section>
+</div>
+    </div>
+    <ul class="navPages-list">
+            <li class="navPages-item">
+                <a class="navPages-action" href="http://getagstandard.com/shop-all/">Shop All</a>
+            </li>
+            <li class="navPages-item">
+                <a class="navPages-action" href="http://getagstandard.com/bundles/">Bundles</a>
+            </li>
+            <li class="navPages-item">
+                <a class="navPages-action" href="http://getagstandard.com/pre-order/">Pre Order</a>
+            </li>
+                 <li class="navPages-item navPages-item-page">
+                     <a class="navPages-action" href="http://getagstandard.com/instagram/">Instagram</a>
+                 </li>
+                 <li class="navPages-item navPages-item-page">
+                     <a class="navPages-action" href="http://getagstandard.com/about/">About</a>
+                 </li>
+                 <li class="navPages-item navPages-item-page">
+                     <a class="navPages-action" href="http://getagstandard.com/faq/">FAQ</a>
+                 </li>
+                 <li class="navPages-item navPages-item-page">
+                     <a class="navPages-action" href="http://getagstandard.com/blog/">Blog</a>
+                 </li>
+    </ul>
+    <ul class="navPages-list navPages-list--user">
+            <li class="navPages-item">
+                <a class="navPages-action" href="/giftcertificates.php">Gift Certificates</a>
+            </li>
+            <li class="navPages-item">
+                <a class="navPages-action has-subMenu" href="/account.php" data-collapsible="navPages-account">
+                    Account <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down" /></svg></i>
+                </a>
+                <div class="navPage-subMenu" id="navPages-account" aria-hidden="true" tabindex="-1">
+                    <ul class="navPage-subMenu-list">
+                        <li class="navPage-subMenu-item">
+                            <a class="navPage-subMenu-action navPages-action" href="/account.php?action=order_status">Orders</a>
+                        </li>
+                        <li class="navPage-subMenu-item">
+                            <a class="navPage-subMenu-action navPages-action" href="/account.php?action=inbox">Messages</a>
+                        </li>
+                        <li class="navPage-subMenu-item">
+                            <a class="navPage-subMenu-action navPages-action" href="/account.php?action=address_book">Addresses</span></a>
+                        </li>
+                        <li class="navPage-subMenu-item">
+                            <a class="navPage-subMenu-action navPages-action" href="/wishlist.php">Wish Lists</a>
+                        </li>
+                        <li class="navPage-subMenu-item">
+                            <a class="navPage-subMenu-action navPages-action" href="/account.php?action=recent_items">Recently Viewed</a>
+                        </li>
+                        <li class="navPage-subMenu-item">
+                            <a class="navPage-subMenu-action navPages-action" href="/account.php?action=account_details">Account Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="navPages-item">
+                <a class="navPages-action" href="/login.php?action=logout">Sign out</a>
+            </li>
+    </ul>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron" style="height: 50%; margin-top:3%;" >
+	<div class="container">
+		<div class="row height">
+			<div class="col-lg-6 col-xs-12">
+				Empty div
+			</div>
+			<div class="col-lg-6 col-xs-12">
+				<h1 >Our </br> Story</h1>
+			</div>
+			
+		</div>
+
+	</div>
+</div>
+
+<!-- Sourcing Container -->
+
+<div class="container"><!-- Example row of columns -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="lightpadding" >The Importance of Sourcing</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-offset-2 col-lg-8">
+			
+			<h6 class="lightpadding">To end with quality, you have to start with quality. We treat the products you buy, as seriously as the products we buy. We hold no excuses for shortcuts. We will stop at nothing to source the finest ingredients and promise to not ruin them with over processing.</h6>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 imagewall">
+			<img src="http://via.placeholder.com/300x300" />
+		</div>
+		<div class="col-lg-3 imagewall">
+			<img src="http://via.placeholder.com/300x300" />
+		</div>
+		<div class="col-lg-3 imagewall">
+			<img src="http://via.placeholder.com/300x300" />
+		</div>
+		<div class="col-lg-3 imagewall">
+			<img src="http://via.placeholder.com/300x300" />
+		</div>
+		<div class="col-lg-12 imagewall">
+			<img src="http://via.placeholder.com/1100x300" />
+		</div>
+	</div>
+	<hr>
+</div>
+
+<!-- Thoughtful Handling Container -->
+    
+<div class="container"><!-- Example row of columns -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 style="padding: 3%;">The importance of thoughtful and conscious handling</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-offset-2 col-lg-8">
+			
+			<h6>Our philosphy is simple. The end result is the sum of all the inputs compounded positively or negatively with time and by handling. By thoughtfully combining extrodinary ingredients, our results are consistently outstanding</h6>
+		</div>
+	</div>
+	</br>
+	<div style="margin-top: 3%;" class="row">
+		
+		<div class="col-md-4">
+			<img src="http://via.placeholder.com/300x300" />
+			<h2 class="display-3">Time</h2>
+			<!-- <p>Add Something here</p> -->
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+		</div>
+		<div class="col-md-4">
+		<img src="http://via.placeholder.com/300x300" />
+			<h2>Temperature</h2>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+		</div>
+		<div class="col-md-4">
+			<img src="http://via.placeholder.com/300x300" />
+			<h2>Humidity</h2>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+		</div>
+	</div>
+
+	<hr >
+</div>
+
+
+<!-- Timing Container -->
+
+
+<div class="container"><!-- Example row of columns -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 style="padding: 3%;">The importance of timing.</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-2">
+			<img src="http://via.placeholder.com/400x460" />
+		</div>
+		<div class="col-lg-4">
+			<h6>Same Day - Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </h6>
+
+			<h6>Weekly Roasting Schedule - Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </h6>
+
+			<h6>Direct to customer - If we Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </h6>
+			
+			<h6>Monthly Wholesale Fills - Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </h6>
+			
+		</div>
+
+	</div>
+	<hr>
+</div>
+
+
+
+
+<div class="container"><!-- Example row of columns -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 style="padding: 3%;">Testamonials</h2>
+		</div>
+	</div>
+	
+	</br>
+	<div style="margin-top: 3%;" class="row">
+		
+		<div class="col-md-4">
+			<img src="http://via.placeholder.com/300x300" />
+			<h2 class="display-3">Amazon Customer</h2>
+			<!-- <p>Add Something here</p> -->
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+		</div>
+		<div class="col-md-4">
+		<img src="http://via.placeholder.com/300x300" />
+			<h2>Website Customer</h2>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+		</div>
+		<div class="col-md-4">
+			<img src="http://via.placeholder.com/300x300" />
+			<h2>Blogger</h2>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+		</div>
+	</div>
+
+	<hr >
+</div>
+
+
+
+
+
+
+
+
+<!-- Footer  -->
+
+        <footer style="margin-top:4%;" class="footer" role="contentinfo">
+    <div class="container">
+        <section class="footer-info">
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+                <h5 class="footer-info-heading">Navigate</h5>
+                <ul class="footer-info-list">
+                        <li>
+                            <a href="http://getagstandard.com/instagram/">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="http://getagstandard.com/about/">About</a>
+                        </li>
+                        <li>
+                            <a href="http://getagstandard.com/faq/">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="http://getagstandard.com/blog/">Blog</a>
+                        </li>
+                    <li>
+                        <a href="/sitemap.php">Sitemap</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+                <h5 class="footer-info-heading">Categories</h5>
+                <ul class="footer-info-list">
+                        <li>
+                            <a href="http://getagstandard.com/shop-all/">Shop All</a>
+                        </li>
+                        <li>
+                            <a href="http://getagstandard.com/bundles/">Bundles</a>
+                        </li>
+                        <li>
+                            <a href="http://getagstandard.com/pre-order/">Pre Order</a>
+                        </li>
+                </ul>
+            </article>
+
+
+            <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">
+                <h5 class="footer-info-heading">Info</h5>
+                <address>AgStandard HQ<br>
+Los Angeles, CA<br>
+lets@getagstandard.com</address>
+            </article>
+
+            <article class="footer-info-col" data-section-type="newsletterSubscription">
+                            </article>
+        </section>
+            <div class="footer-copyright">
+                <p class="powered-by">Powered by <a href="https://www.bigcommerce.com/" rel="nofollow">BigCommerce</a></p>
+            </div>
+            <div class="footer-copyright">
+                <p class="powered-by">&copy; 2018 AgStandard - The Freshest Brand </p>
+            </div>
+    </div>
+</footer>
+
+
+
+
+
+
