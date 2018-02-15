@@ -35,17 +35,37 @@
         /*background-image: https://i.imgur.com/oIcOmY1.jpg;*/
          background: url('https://i.imgur.com/oIcOmY1.jpg') no-repeat center center ;
          background-size: cover;
-  /*position: fixed;*/
-  width: 100%;
-  height: 350px; /*same height as jumbotron */
-  top:0;
-  left:0;
-  z-index: -1;
+          /*position: fixed;*/
+          width: 100%;
+          height: 350px; /*same height as jumbotron */
+          top:0;
+          left:0;
+          z-index: -1;
+    }
+    .background-block {
+        /*background-color: #add8e6;
+        /*background-image: https://i.imgur.com/oIcOmY1.jpg;*/
+         background: url('https://images.unsplash.com/photo-1457393568996-e452740c8346?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d9fcb386597db5dfa31416a5a9f1cf3f&auto=format&fit=crop&w=1650&q=80') no-repeat center center ;
+         background-size: cover;
+          /*position: fixed;*/
+          width: 100%;
+          /*height: 350px; same height as jumbotron */
+          top:0;
+          left:0;
+          z-index: -1;
+        z-index: 1*/
+
     }
     .hero-text {
         color: white;
         margin-top: 25%;
         font-size: 5em;
+    }
+    .text-bg {
+        background-color: white;
+        opacity: 0.75;
+        color: black;
+        border-radius: 5px;
     }
 </style>
 
@@ -103,16 +123,16 @@
 		</div>
 	</div>
 	<div class="row center">
-		<div class="col-lg-3 col-xs-12 imagewall">
+		<div class="col-md-3 col-xs-12 imagewall">
 			<img class="image" src="https://imgur.com/hgoVtv7.png" />
 		</div>
-		<div class="col-lg-3 hidden-sm-down imagewall">
+		<div class="col-md-3 hidden-sm-down imagewall">
 			<img class="image" src="https://i.imgur.com/XpKs3s8.png" />
 		</div>
-		<div class="col-lg-3 hidden-sm-down imagewall">
+		<div class="col-md-3 hidden-sm-down imagewall">
 			<img class="image" src="https://i.imgur.com/MPQYqVe.png" />
 		</div>
-		<div class="col-lg-3 hidden-sm-down imagewall">
+		<div class="col-md-3 hidden-sm-down imagewall">
 
 			<img class="image" src="https://imgur.com/hgoVtv7.png" />
 		</div>
@@ -124,47 +144,54 @@
 </div>
 
 <!-- Thoughtful Handling Container -->
-    
-<div class="container"><!-- Example row of columns -->
-	<div class="row">
-		<div class="col-lg-12">
-			<h1 class="center" style="padding: 3%;">Thoughtful and conscious handling</h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-offset-2 col-lg-8">
-			<!-- Our philosphy is simple. The end result is the sum of all the inputs compounded positively or negatively with time and by handling.  -->
-			<p class="center">By thoughtfully combining extrodinary ingredients, our results are consistently outstanding</p>
-		</div>
-	</div>
-	</br>
-	<div style="margin-top: 3%;" class="row center">
-		
-		<div class="col-md-4">
-			<img class="image" src="https://i.imgur.com/ouFxCfE.png" />
-			<h2 class="display-3">Batch Size</h2>
-			<!-- <p>Add Something here</p> -->
-            <!-- Years ago, common industry practice was make huge batches to maximize efficiency. Fortunately, its 2018 and times have changed.  -->
-			<p>Our goal is to maximize your satisfaction by making only as much as needed. You can rest assured your package will arrive fresh.</p>
-			<p><a class="btn btn-secondary" href="#">View details »</a></p>
-		</div>
-		<div class="col-md-4">
-		<img class="image" src="https://imgur.com/hgoVtv7.png" />
-			<h2>Time</h2>
-			<p>We take our time to guarentee the best flavor. Have you ever heard slow cooked and had a thought other than yum?..... us either.</p>
-			<p><a class="btn btn-secondary" href="#">View details »</a></p>
-		</div>
-		<div class="col-md-4">
-			<img class="image" src="https://i.imgur.com/bJiFOVy.png" />
-			<h2>Temperature</h2>
-			<p>Every nut cooks best at a different temperature. Our roasts are controled with precision accuracy for amazing flavor.</p>
-			<p><a class="btn btn-secondary" href="#">View details »</a></p>
-		</div>
-	</div>
+<div class="background-block">
+    <div class="container"><!-- Example row of columns -->
+    	<div class="row">
+    		<div class="col-lg-offset-2 col-lg-8">
+    			<h1 class="center text-bg" style="padding: 3%;">Thoughtful and conscious handling</h2>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-lg-offset-3 col-lg-6">
+    			<!-- Our philosphy is simple. The end result is the sum of all the inputs compounded positively or negatively with time and by handling.  -->
+    			<p class="center text-bg">By thoughtfully combining extrodinary ingredients, our results are consistently outstanding</p>
+    		</div>
+    	</div>
+    	</br>
+    	<div style="margin-top: 3%;" class="row center">
+    		
+    		<div class="col-md-4">
+    			<img class="image" src="https://i.imgur.com/ouFxCfE.png" />
+                <div class="text-bg">
+        			<h2 class="display-3">Batch Size</h2>
+        			<!-- <p>Add Something here</p> -->
+                    <!-- Years ago, common industry practice was make huge batches to maximize efficiency. Fortunately, its 2018 and times have changed.  -->
+        			<p class="">Our goal is to maximize your satisfaction by making only as much as needed. You can rest assured your package will arrive fresh.</p>
+        			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+    		</div>
+    		<div class="col-md-4">
+                <img class="image" src="https://imgur.com/hgoVtv7.png" />
+                <div class="text-bg">
+                      
+        			<h2>Time</h2>
+        			<p>We take our time to guarentee the best flavor. Have you ever heard slow cooked and had a thought other than yum?..... us either.</p>
+        			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+    		</div>
+    		<div class="col-md-4">
+    			<img class="image" src="https://i.imgur.com/bJiFOVy.png" />
+    			<div class="text-bg">
+                    <h2>Temperature</h2>
+        			<p>Every nut cooks best at a different temperature. Our roasts are controled with precision accuracy for amazing flavor.</p>
+        			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+    		</div>
+        </div>
 
-	<hr >
+    	<hr >
+    </div>
 </div>
-
 
 <!-- Timing Container -->
 
@@ -186,7 +213,7 @@
 
 			<p>Direct to customer - Someone really smart once said, the fastest way from point a to b is in a straight line. We offer the delivery speed you need, because not everything needs to be instant. When deliveries start arriving by drone. We'll be the first in line.</p>
 			
-			<p>Monthly Wholesale Fills - Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </p>
+			<!-- <p>Monthly Wholesale Fills - Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </p> -->
 			
 		</div>
 
