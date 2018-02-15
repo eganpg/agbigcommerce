@@ -2,11 +2,21 @@
 	/*hr {
 		padding: 2%;
 	}*/
+    .wf-logo {
+        max-width: 50%;
+    }
     .image {
+        border-radius: 10%;
         width: 100%;
     }
     .center {
         text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    .left {
+        text-align: left;
     }
 	.lightpadding {
 		padding-bottom: 2%;
@@ -21,6 +31,22 @@
 		padding-right: 1;
 		padding-left: 1;
 	}
+    .bg-image {
+        /*background-image: https://i.imgur.com/oIcOmY1.jpg;*/
+         background: url('https://i.imgur.com/oIcOmY1.jpg') no-repeat center center ;
+         background-size: cover;
+  /*position: fixed;*/
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+    }
+    .hero-text {
+        color: white;
+        margin-top: 25%;
+        font-size: 5em;
+    }
 </style>
 
 
@@ -40,15 +66,21 @@
     <!--  -->
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron" style="height: 10%; margin-top:3%;" >
-	<div class="container">
+<div class="bg-image"  >
+	<div class="container ">
 		<div class="row height">
-			<div class="col-lg-6 col-xs-12">
-				Empty div
+			<div class="col-lg-4 col-xs-12">
+				<!-- Empty div -->
 			</div>
-			<div class="col-lg-6 col-xs-12 center">
-				<h1 >Our </br> Story</h1>
+            <div class="col-lg-2 col-xs-12">
+                <!-- Empty div -->
+            </div>
+			<div class="col-lg-5 col-xs-12 right ">
+				<h1 class="hero-text">Our </br> Story</h1>
 			</div>
+            <div class="col-lg-1 col-xs-12">
+                <!-- Empty div -->
+            </div>
 			
 		</div>
 
@@ -74,10 +106,10 @@
 			<img class="image" src="https://imgur.com/hgoVtv7.png" />
 		</div>
 		<div class="col-lg-3 imagewall">
-			<img class="image" src="https://imgur.com/hgoVtv7.png" />
+			<img class="image" src="https://i.imgur.com/XpKs3s8.png" />
 		</div>
 		<div class="col-lg-3 imagewall">
-			<img class="image" src="https://imgur.com/hgoVtv7.png" />
+			<img class="image" src="https://i.imgur.com/MPQYqVe.png" />
 		</div>
 		<div class="col-lg-3 imagewall">
 
@@ -108,22 +140,22 @@
 	<div style="margin-top: 3%;" class="row center">
 		
 		<div class="col-md-4">
-			<img class="image" src="https://imgur.com/hgoVtv7.png" />
-			<h2 class="display-3">Time</h2>
+			<img class="image" src="https://i.imgur.com/ouFxCfE.png" />
+			<h2 class="display-3">Batch Size</h2>
 			<!-- <p>Add Something here</p> -->
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<p>Years ago, common industry practice was make huge batches to maximize efficiency. Fortunately, its 2018 and times have changed. Our goal is to maximize your satisfaction by making only as much as needed. You can rest assured your package will arrive fresh.</p>
 			<p><a class="btn btn-secondary" href="#">View details »</a></p>
 		</div>
 		<div class="col-md-4">
 		<img class="image" src="https://imgur.com/hgoVtv7.png" />
-			<h2>Temperature</h2>
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<h2>Time</h2>
+			<p>We take our time to ensure the best flavor. Have you ever heard slow cooked and had a thought other than yum?..... us either.</p>
 			<p><a class="btn btn-secondary" href="#">View details »</a></p>
 		</div>
 		<div class="col-md-4">
-			<img class="image" src="https://imgur.com/hgoVtv7.png" />
-			<h2>Humidity</h2>
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<img class="image" src="https://i.imgur.com/bJiFOVy.png" />
+			<h2>Temperature</h2>
+			<p>Every nut cooks best at a different temperature. Our roasts are controled with precision accuracy for amazing flavor.</p>
 			<p><a class="btn btn-secondary" href="#">View details »</a></p>
 		</div>
 	</div>
@@ -143,7 +175,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-4 col-lg-offset-2 center">
-			<img class="image" src="https://imgur.com/hgoVtv7.png" />
+			<img class="image" src="https://i.imgur.com/Xd3bURU.jpg" />
 		</div>
 		<div class="col-lg-4">
 			<h6>Same Day - Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </h6>
@@ -174,23 +206,23 @@
 	<div style="margin-top: 3%;" class="row center">
 		
 		<div class="col-md-4">
-			<img class="image" src="https://imgur.com/hgoVtv7.png" />
-			<h2 class="display-3">Amazon Customer</h2>
+			<img class="image" src="https://i.imgur.com/YzO2qkn.png" />
+			<!-- <h2 class="display-3">Amazon Customer</h2> -->
 			<!-- <p>Add Something here</p> -->
 			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+			<!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
 		</div>
 		<div class="col-md-4">
-		<img class="image" src="https://imgur.com/hgoVtv7.png" />
-			<h2>Website Customer</h2>
+		<img class="image wf-logo" style="" src="https://i.imgur.com/yXPxfUG.png" />
+			<!-- <h2>Website Customer</h2> -->
 			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+			<!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
 		</div>
 		<div class="col-md-4">
-			<img class="image" src="https://imgur.com/hgoVtv7.png" />
-			<h2>Blogger</h2>
+			<img class="image" src="https://i.imgur.com/qZmxqWw.png" />
+			<!-- <h2>Blogger</h2> -->
 			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-			<p><a class="btn btn-secondary" href="#">View details »</a></p>
+			<!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
 		</div>
 	</div>
 
